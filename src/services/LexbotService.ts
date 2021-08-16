@@ -56,5 +56,5 @@ export const useLexbotService = (sessionId: string) => {
         startChat: async () => service.startChat(sessionId),
         respondToUser: async (userInput: string) => service.respondToUser(sessionId, userInput),
         endChat: async () => service.endChat(sessionId),
-    }), [service]);
+    }), [service, sessionId]);
 };
